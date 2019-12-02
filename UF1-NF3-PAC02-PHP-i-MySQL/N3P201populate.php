@@ -38,6 +38,22 @@ $query  = 'INSERT INTO persona
         (6, "billie joe", "estados unidos", 47)';
 mysqli_query($db,$query) or die(mysqli_error($db));
 
+
+$query  = 'INSERT INTO reviews
+    VALUES 
+        (1, "osvaldo", "1995-01-29", 2, 1, "muy chingona xd"),
+        (2, "julio", "2019-6-6", 5, 1, "500 likes en mi coment y me tiro de un quinto piso"),
+        (3, "erminia", "2019-4-5", 3.5, 1, "bonita cancion"),
+        (4, "joe", "2019-2-7", 3, 2, "no me gusta, bueno un poco si"),
+        (5, "matius", "2019-6-6", 5, 2, "esta cansion esta muy chingona, jaja salu2"),
+        (6, "jhon", "2019-21-6", 3, 2, "yeah"),
+        (7, "james", "2019-3-6", 4.2, 3, "si la pones al reves se oye a dios"),
+        (8, "stu", "1816-4-8", 5, 3, "que dices xdd"),
+        (9, "gerardo", "2019-4-5", 2, 3, "yo solo oigo a mis voces"),
+        (10, "juan", "2019-3-6", 5, 4, "melodica"),
+        (11, "nelson", "2019-6-6", 4,4, "me gusta, pero no lo suficiente" ),
+        (12, "ratata", "2019-4-5", 5, 4, "esto es esparta!")';
+mysqli_query($db,$query) or die(mysqli_error($db));
 echo 'Data inserted successfully!';
 ?>
 
@@ -46,21 +62,4 @@ echo 'Data inserted successfully!';
 
 
 
-?>
-<tr>
-    <td colspan="2" align="center"><? echo "<strong>Total registros: </strong>".$totalRegistros; ?></td>
-    <td colspan="2" align="center"><? echo "<strong>Pagina: </strong>".$pagina; ?></td>
-</tr>
-<tr bgcolor="f3f4f1">
-    <td colspan="4" align="right"><strong>Pagina:
-<?php
-for($i=1; $i<$noPaginas+1; $i++) { //Imprimo las paginas
-	if($i == $pagina)
-		echo "<font color=red>$i </font>"; //A la pagina actual no le pongo link
-	else
-		echo "<a href=\"?pagina=".$i."&searchs=".$buskr."\" style=color:#000;> ".$i."</a>";
-}
-?>
-	</strong></td>
-</tr>
-</table>
+

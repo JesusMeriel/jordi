@@ -85,7 +85,7 @@ case 'edit':
         if (empty($error)) {
             $query = 'UPDATE persona SET nombre = "' . $_POST['nombre'] . '", pais = "' . $_POST['pais'] . '", edad = ' . $_POST['edad'] .' WHERE persona_id = ' . $_POST['persona_id'];
         }else {
-          header('Location:people.php?action=add' .
+          header('Location:people.php?action=edit&id=' . $_POST['persona_id'] .
               '&error=' . join($error, urlencode('<br/>')));
         }
         break;

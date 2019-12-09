@@ -1,0 +1,50 @@
+<html>
+ <head>
+  <title>Say My Name</title>
+ </head>
+ <body>
+  <form action="N4P111formprocess.php" method="post">
+   <table>
+    <tr>
+     <td>Nombre</td>
+     <td><input type="text" name="nombre" /></td>
+    </tr>
+    <tr>
+     <td>Fecha</td>
+     <td><input type="text" name="date" placeholder="yyyy-mm-dd" /></td>
+    </tr>
+    <tr>
+     <td>Calificame</td>
+     <td>
+     <select name="rating">
+      <option value="1">1</option> 
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+     </select>
+     </td>
+    </tr>
+    <tr>
+     <td>Cancion</td>
+     <td>
+     <select name="song">
+      <option value="1">blind</option> 
+      <option value="2">my generation</option>
+      <option value="3">can't stop</option>
+      <option value="4">insane in the brain</option>
+     </select>
+     </td>
+    </tr>
+    <tr>
+     <td>Comentario</td>
+     <td><textarea name="comentario" rows="10" cols="50">;)</textarea><br></td>
+    </tr>
+    <tr>
+     <td colspan="2" style="text-align: center;">
+      <input type="submit" name="submit" value="Submit" /></td>
+    </tr>
+   </table>
+  </form>
+ </body>
+</html>

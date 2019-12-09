@@ -186,9 +186,9 @@ echo <<<ENDHTML
     style="width: 90%; margin-left: auto; margin-right: auto;">
     <tr>
      <th style="width: 7em;"><a href="N3P308details.php?ord=$ord&song_id=$song">Date</a></th>
-     <th style="width: 10em;">Reviewer</th>
-     <th>Comments</th>
-     <th style="width: 5em;">Rating</th>
+     <th style="width: 10em;"><a href="N3P308details.php?ord=$ord&song_id=$song">Reviewer</a></th>
+     <th><a href="N3P308details.php?ord=$ord&song_id=$song">Comments</a></th>
+     <th style="width: 5em;"><a href="N3P308details.php?ord=$ord&song_id=$song">Rating</a></th>
     </tr>
 ENDHTML;
 $cont=0;
